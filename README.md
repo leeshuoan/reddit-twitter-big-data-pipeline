@@ -16,9 +16,6 @@ Builds the entire big data pipeline programmatically using terraform, an Infrast
     a. **Linux:** Similarly, run `sudo <package-manager> make`. E.g. Ubuntu: `sudo apt install make`
     b. [MacOS](https://formulae.brew.sh/formula/make)
 
-
-
-
 ## How to run
 1. Run `aws configure` and define credentials for the AWS account you want to use. Ensure that the IAM user has the `AdministratorFullAccess` policy in order for terraform to build the required resources 
 2. In the terraform directory, rename `terraform.tfvars.example` to `terraform.tfvars` and add your own details into the file.
@@ -43,6 +40,9 @@ Enter terraform directory with `cd terraform`
 2. Activate your Python venv by running **MAC:** `source venv/bin/activate` or **Windows:** `source.bat`
 3. Install the required libraries by running `pip install -r requirements.txt`
 4. Rename `.env.example` to `.env` and add your own details into the file
+
+# Architecture
+![Architecture Diagram](https://user-images.githubusercontent.com/72493091/229983026-90c403ef-1380-4e31-a5c6-210676b47ae2.png)
 
 # Pipeline Demonstration
 - [Building the pipeline](https://youtu.be/XNzLogp0kxc)
